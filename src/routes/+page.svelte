@@ -327,10 +327,10 @@
 </script>
 
 <svelte:head>
-    <title>PenguinMod - Home</title>
-    <meta name="title" content="PenguinMod - Home" />
-    <meta property="og:title" content="PenguinMod - Home" />
-    <meta property="twitter:title" content="PenguinMod - Home" />
+    <title>PotentiaMod - Home</title>
+    <meta name="title" content="PotentiaMod - Home" />
+    <meta property="og:title" content="PotentiaMod - Home" />
+    <meta property="twitter:title" content="PotentiaMod - Home" />
     <meta
         name="description"
         content="The area where featured projects and community stuff & info is shown."
@@ -354,17 +354,24 @@
 
     <Alert
         onlyShowID={"donatee:_3"}
-        text={"PenguinMod is a free-to-use visual coding website. Your support can help us keep the website working!"}
+        text={"PotentiaMod is a powerful free-to-use visual coding website/game engine based off of TurboWarp."}
         textBreakup={true}
         textColor={"white"}
         hasImage={true}
-        imgSrc={"/happy.svg"}
+        imgSrc={"happy.svg"}
         imgAlt={":D"}
         hasButton={true}
-        buttonText={"Support"}
-        buttonHref={"/support"}
+        buttonText={"Try it!"}
+        buttonHref={"https://potentiamod.github.io/"}
     />
     <StatusAlert />
+    <Alert
+        onlyShowID={"downtime:_3"}
+        text={"Be aware! The servers are broken by the moment this site is made."}
+        textBreakup={true}
+        backColor={"Yellow"}
+        textColor={"Black"}
+    />
 
     {#if !loggedIn}
         <div class="section-info">
@@ -376,16 +383,17 @@
                         lang={currentLang}
                     />
                 </h1>
-                <h1>
-                    <LocalizedText
-                        text="Built off of TurboWarp and Scratch"
-                        key="home.introduction2"
-                        dolink={true}
-                        lang={currentLang}
-                    />
+                 <h1>
+                    Built off of <a
+                        href="https://scratch.org"
+                        style="color:orange;">Scratch</a
+                    > and 
+                   <a href="https://turbowarp.org" style="color:red;"
+                        >TurboWarp</a
+                    >
                 </h1>
                 <Button
-                    label="<img src='/tryit.svg' width='32px' style='margin-right:8px'></img>"
+                    label="<img src='tryit.svg' width='32px' style='margin-right:8px'></img>"
                     highlighted="true"
                     link={LINK.editor}
                 >
@@ -396,7 +404,7 @@
                             lang={currentLang}
                         />
                     {:else}
-                        EEEAAAOOO
+                        AAEEOOO! KILLER TOFU!
                     {/if}
                 </Button>
             </div>
@@ -417,11 +425,14 @@
                     />
                 {:else}
                     <iframe
-                        src="/eao.html"
-                        title="The Thingy"
-                        width="426.666667"
-                        height="240"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube-nocookie.com/embed/4AyrQg4xXI4"
+                        title="LOL!"
                         frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
                         class="example-video"
                     />
                 {/if}
@@ -444,7 +455,7 @@
                 />
                 <p>
                     <LocalizedText
-                        text="PenguinMod is made by English-speaking developers. Expect minor issues and sorry for any translation errors."
+                        text="PotentiaMod is made by an only one English-speaking developer. Expect minor issues and sorry for any translation errors."
                         key="translation.warning"
                         lang={currentLang}
                     />
@@ -467,13 +478,6 @@
                     lang={currentLang}
                 />
             </Button>
-            <Button link={"/support"}>
-                <LocalizedText
-                    text="Funding"
-                    key="home.footer.sections.donate"
-                    lang={currentLang}
-                />
-            </Button>
             <Button label="GitHub" link={LINK.github} />
             <Button link={LINK.wiki}>
                 <LocalizedText
@@ -490,7 +494,7 @@
             <img src="/warning.png" draggable="false" alt="Warning" />
             <p>
                 <LocalizedText
-                    text="PenguinMod is made by English-speaking developers. Expect minor issues and sorry for any translation errors."
+                    text="PotentiaMod is made by an only one English-speaking developer. Expect minor issues and sorry for any translation errors."
                     key="translation.warning"
                     lang={currentLang}
                 />
@@ -498,10 +502,11 @@
         </div>
     {/if}
 
+    <center><img src="/logo.png" alt="GaiaMod" style="width: 20rem"></center>
     <p style="width: 100%; text-align: center;">
         <i>
             <LocalizedText
-                text="Scratch Note: Please don't mention PenguinMod on Scratch, we have different rules compared to Scratch! 😅"
+                text="Scratch Note: You can only mention PotentiaMod if there is a bug, please."
                 key="home.scratchnote"
                 lang={currentLang}
             />
@@ -510,39 +515,35 @@
 
     <div class="section-categories">
         {#if !loggedIn}
-            <ContentCategory
-                header={TranslationHandler.text(
-                    "home.sections.whatsnew",
-                    currentLang,
-                )}
-                seemore={`https://discord.com/channels/1033551490331197462/1038252360184643674`}
-            >
-                <div class="category-content">
-                    {#if updates.length > 0}
-                        {#each updates as update}
-                            <UserDisplay
-                                link={`https://discord.com/channels/1033551490331197462/1038252360184643674`}
-                                userLink={`https://discord.com/channels/1033551490331197462/1038252360184643674`}
-                                text={update.cleanContent}
-                                author={update.authorName}
-                                image={update.authorImage}
-                            />
-                            <a target="_blank" href={update.image}>
-                                <button class="update-image-wrapper">
-                                    <img
-                                        src={update.image}
-                                        alt={update.cleanContent}
-                                        title={update.cleanContent}
-                                        class="update-image"
-                                    />
-                                </button>
-                            </a>
-                        {/each}
-                    {:else}
-                        <LoadingSpinner />
-                    {/if}
-                </div>
-            </ContentCategory>
+          <ContentCategory
+            header={TranslationHandler.text(
+                "home.sections.whatsnew",
+                currentLang,
+            )}
+            seemore={`https://github.com/PotentiaMod/`}
+        >
+            <div class="category-content">
+                <UserDisplay
+                    link="https://potentiamod.github.io/editor.html"
+                    userLink={`https://github.com/gaiawindwave90`}
+                    text="Try out this editor!"
+                    author="gaiawindwave90"
+                    image="https://avatars.githubusercontent.com/u/4597024?v=4"
+                />
+                <a
+                    target="_blank"
+                    href="https://potentiamod.github.io/editor.html"
+                >
+                    <button class="update-image-wrapper">
+                        <img
+                            src="https://potentiamod.github.io/images/screencap-light.png"
+                            alt="Screencap"
+                            class="update-image"
+                        />
+                    </button>
+                </a>
+            </div>
+        </ContentCategory>
         {:else}
             <div class="welcome-back-card">
                 <img
