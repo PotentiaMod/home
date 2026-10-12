@@ -26,12 +26,12 @@ export default {
     /**
      * PenguinMod's terms of service page
      */
-    terms: `${PUBLIC_STUDIO_URL}/terms`,
+    terms: "/terms",
 
     /**
      * PenguinMod's privacy policy page
      */
-    privacy: `${PUBLIC_STUDIO_URL}/privacy`,
+    privacy: "/privacy",
 
     /**
      * PenguinMod's guideline pages for services
@@ -40,7 +40,7 @@ export default {
         /**
          * PenguinMod's project uploading guidelines
          */
-        projects: `https://studio.penguinmod.com/PenguinMod-Guidelines/PROJECTS`
+        projects: `${PUBLIC_STUDIO_URL}/PenguinMod-Guidelines/PROJECTS`
     },
 
     /**
@@ -48,8 +48,7 @@ export default {
      */
     donate: {
         scratch: "https://www.scratchfoundation.org/donate",
-        turbowarp: "https://github.com/sponsors/GarboMuffin",
-        penguinmod: "https://studio.penguinmod.com/support"
+        turbowarp: "https://github.com/sponsors/GarboMuffin"
     },
 
     /**
@@ -65,12 +64,12 @@ export default {
     /**
      * PenguinMod's home page
      */
-    home: "https://potentiamod.github.io/home",
+    home: "https://penguinmod.com/",
 
     /**
      * PenguinMod's packager page
      */
-    packager: `${PUBLIC_STUDIO_URL}/packager/`,
+    packager: "https://potentiamod.github.io/packager/",
 
     /**
      * PenguinMod's unofficial wiki
