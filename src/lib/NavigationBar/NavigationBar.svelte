@@ -525,12 +525,14 @@
     }
 	
 	.logomark {
+    color: white;
     font-weight: 800;
     font-size: 15px;
     letter-spacing: -0.02em;
 }
 
 .slogan {
+color: white;
     font-size: 10px;
     line-height: 1.5;
     padding-left: 25%;

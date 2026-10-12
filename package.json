@@ -1,5 +1,5 @@
 {
-    "name": "penguinmod-home",
+    "name": "potentiamod--home",
     "version": "0.0.1",
     "private": true,
     "scripts": {
@@ -19,6 +19,7 @@
         "file-saver": "^2.0.5",
         "js-beautify": "^1.15.4",
         "jszip": "^3.10.1",
+        "lucide-svelte": "^1.0.1",
         "markdown-it": "^13.0.2",
         "pmp-protobuf": "^1.8.8",
         "protobufjs": "^7.3.2"
