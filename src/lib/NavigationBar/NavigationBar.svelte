@@ -353,8 +353,9 @@
     class="bar"
     style={isAprilFirst ? `background-color: ${randomColor} !important` : ""}
 >
-    <a class="logo" href="/">
+    <a class="logo" href="https://potentiamod.github.io/home-new/">
         <img class="logo-image" src="https://potentiamod.github.io/home-new/navicon.png" alt="PotentiaMod" />
+		<span class="logomark">PotentiaMod</span>
     </a>
     <div style="margin-right: 12px;" />
     <div class="logo-launcher-margin" />
@@ -523,6 +524,18 @@
         flex-direction: column;
         justify-content: flex-start;
     }
+	
+	.logomark {
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: -0.02em;
+}
+
+.slogan {
+    font-size: 10px;
+    line-height: 1.5;
+    padding-left: 25%;
+}
 
     .logo {
         height: 100%;

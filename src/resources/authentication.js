@@ -12,7 +12,7 @@ class Authentication {
         hCaptcha_token,
     ) {
         return new Promise((resolve, reject) => {
-            fetch(`${ProjectApi.OriginApiUrl}/api/v1/users/createAccount`, {
+            fetch(`https://projects.penguinmod.com/api/v1/users/createAccount`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -42,7 +42,7 @@ class Authentication {
     }
 
     static verifyPassword(username, password, captcha_token) {
-        const url = `${ProjectApi.OriginApiUrl}/api/v1/users/passwordlogin`;
+        const url = `https://projects.penguinmod.com/api/v1/users/passwordlogin`;
 
         const body = {
             username,
@@ -117,7 +117,7 @@ class Authentication {
     static verifyToken(username, token) {
         return new Promise((resolve, reject) => {
             fetch(
-                `${ProjectApi.OriginApiUrl}/api/v1/users/tokenlogin?username=${username}&token=${token}`,
+                `https://projects.penguinmod.com/api/v1/users/tokenlogin?username=${username}&token=${token}`,
             )
                 .then((r) =>
                     r
@@ -149,7 +149,7 @@ class Authentication {
         return new Promise((resolve, reject) => {
             const username = localStorage.getItem("username");
             const token = localStorage.getItem("token");
-            fetch(`${ProjectApi.OriginApiUrl}/api/v1/users/logout`, {
+            fetch(`https://projects.penguinmod.com/api/v1/users/logout`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -180,14 +180,14 @@ class Authentication {
         // name is a misnomer, was just to lazy to change after new api update.
         // TODO: make this less misleading
         const j = await fetch(
-            `${ProjectApi.OriginApiUrl}/api/v1/users/userfromcode?token=${token}`,
+            `https://projects.penguinmod.com/api/v1/users/userfromcode?token=${token}`,
         ).then((r) => r.json());
 
         if (j.error) throw j.error;
 
         if (!j.birthdayEntered || !j.countryEntered || !j.isEmailVerified) {
             const extra = await fetch(
-                `${ProjectApi.OriginApiUrl}/api/v1/users/extrainfostatus?token=${token}`,
+                `https://projects.penguinmod.com/api/v1/users/extrainfostatus?token=${token}`,
             ).then((r) => r.json());
 
             j.birthdayEntered = extra.birthdayEntered;
@@ -204,7 +204,7 @@ class Authentication {
 
     static changePassword(username, token, oldPassword, newPassword) {
         return new Promise((resolve, reject) => {
-            fetch(`${ProjectApi.OriginApiUrl}/api/v1/users/changePassword`, {
+            fetch(`https://projects.penguinmod.com/api/v1/users/changePassword`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -232,7 +232,7 @@ class Authentication {
     static resetPassword(email, state, newPassword) {
         return new Promise((resolve, reject) => {
             fetch(
-                `${ProjectApi.OriginApiUrl}/api/v1/users/resetpassword/reset`,
+                `https://projects.penguinmod.com/api/v1/users/resetpassword/reset`,
                 {
                     method: "POST",
                     headers: {
@@ -261,7 +261,7 @@ class Authentication {
     static sendResetPasswordEmail(email, captcha_token) {
         return new Promise((resolve, reject) => {
             fetch(
-                `${ProjectApi.OriginApiUrl}/api/v1/users/resetpassword/sendEmail`,
+                `https://projects.penguinmod.com/api/v1/users/resetpassword/sendEmail`,
                 {
                     method: "POST",
                     headers: {
@@ -286,7 +286,7 @@ class Authentication {
     static verifyEmail(username, token) {
         return new Promise((resolve, reject) => {
             fetch(
-                `${ProjectApi.OriginApiUrl}/api/v1/users/resetpassword/sendVerifyEmail`,
+                `https://projects.penguinmod.com/api/v1/users/resetpassword/sendVerifyEmail`,
                 {
                     method: "POST",
                     headers: {
@@ -310,7 +310,7 @@ class Authentication {
 
     static changeUsername(username, token, newUsername) {
         return new Promise((resolve, reject) => {
-            fetch(`${ProjectApi.OriginApiUrl}/api/v1/users/changeUsername`, {
+            fetch(`https://projects.penguinmod.com/api/v1/users/changeUsername`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
