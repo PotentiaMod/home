@@ -85,11 +85,11 @@
                     );
 
                     const permittedPages = [
-                        "/unfinishedsignup",
-                        "/terms",
-                        "/privacy",
-                        "/contact",
-                        "/guidelines/uploading",
+                        "unfinishedsignup",
+                        "terms",
+                        "privacy",
+                        "contact",
+                        "guidelines/uploading",
                     ];
                     if (
                         (!countryEntered || !birthdayEntered) &&
@@ -276,7 +276,7 @@
                         )}
                         holeColor="#222"
                         emptyColor="#555"
-                        fillColor="dodgerblue 0deg, dodgerblue"
+                        fillColor="#7622FF 0deg, #7622FF"
                         style="width: 28px;height:28px;"
                     />
                 </div>
@@ -285,7 +285,7 @@
                         progress={Translations.getLanguageFinishedPercentage(
                             languageCode,
                         )}
-                        fillColor="dodgerblue 0deg, dodgerblue"
+                        fillColor="#7622FF 0deg, #7622FF"
                         style="width: 28px;height:28px;"
                     />
                 </div>
@@ -354,12 +354,12 @@
     style={isAprilFirst ? `background-color: ${randomColor} !important` : ""}
 >
     <a class="logo" href="/">
-        <img class="logo-image" src="/navicon.png" alt="PotentiaMod" />
+        <img class="logo-image" src="navicon.png" alt="PotentiaMod" />
     </a>
     <div style="margin-right: 12px;" />
     <div class="logo-launcher-margin" />
     <BarPage
-        label="<img src='/moon.svg' alt='ThemeSwitcher'>"
+        label="<img src='moon.svg' alt='ThemeSwitcher'>"
         style="padding:0.5rem"
         classActor={"themeSwitcher"}
         on:click={switchTheme}
@@ -406,13 +406,13 @@
 	</BarButton> -->
     <!-- <BarPage
 		link={LINK.discord}
-		label="<img src='/discord_white.png' width='25' alt='Discord'>"
+		label="<img src='discord_white.png' width='25' alt='Discord'>"
 		style="padding:0.5rem"
 	/> -->
     {#if loggedIn === true}
         <BarPage
             link="/messages"
-            label={"<img src='/messagesstatic/messages.svg' width='25' alt='Messages'>"}
+            label={"<img src='messagesstatic/messages.svg' width='25' alt='Messages'>"}
             style="padding:0.5rem"
             title="messages.title"
             lang={currentLang}
@@ -429,7 +429,7 @@
         </BarPage>
         <BarPage
             link="/mystuff"
-            label="<img src='/messagesstatic/mystuff.svg' width='25' alt='My Stuff'>"
+            label="<img src='messagesstatic/mystuff.svg' width='25' alt='My Stuff'>"
             style="padding:0.5rem"
             title="mystuff.title"
             lang={currentLang}
@@ -438,7 +438,7 @@
     {#if (isAdmin || isApprover) && loggedIn}
         <BarPage
             link="/panel"
-            label="<img src='/messagesstatic/panel.svg' width='25' alt='Panel'>"
+            label="<img src='messagesstatic/panel.svg' width='25' alt='Panel'>"
             style="padding:0.5rem"
             title="Admin Panel"
         />
@@ -475,7 +475,7 @@
         </button>
     {/if}
     <BarPage
-        label="<img src='/globe.svg' alt='LanguageSwitcher'><img src='/dropdown-caret.png' style='margin: 0 4px' alt='v'>"
+        label="<img src='globe.svg' alt='LanguageSwitcher'><img src='dropdown-caret.png' style='margin: 0 4px' alt='v'>"
         style={"padding: 0.5rem; position: absolute; left: 4px;" +
             (Object.keys(availableLanguages).length <= 1
                 ? "display: none;"
@@ -635,7 +635,7 @@
     }
 
     .languageOption:hover {
-        background: dodgerblue !important;
+        background: #7622FF !important;
         color: white;
     }
 
