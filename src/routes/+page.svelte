@@ -502,9 +502,9 @@
         </div>
     {/if}
 
-    <center><img src="logo.png" alt="PotentiaMod" style="width: 20rem"></center>
     <p style="width: 100%; text-align: center;">
         <i>
+           <img src="logo.png" alt="PotentiaMod" style="width: 25px">
             <LocalizedText
                 text="Scratch Note: You can only mention PotentiaMod if there is a bug, please."
                 key="home.scratchnote"
