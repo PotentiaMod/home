@@ -354,7 +354,7 @@
     style={isAprilFirst ? `background-color: ${randomColor} !important` : ""}
 >
     <a class="logo" href="/">
-        <img class="logo-image" src="http://potentiamod.github.io/scratch-gui/images/navicon.png" alt="PotentiaMod" />
+        <img class="logo-image" src="https://potentiamod.github.io/home-new/logo.png" alt="PotentiaMod" />
     </a>
     <div style="margin-right: 12px;" />
     <div class="logo-launcher-margin" />

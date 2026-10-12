@@ -26,12 +26,12 @@ export default {
     /**
      * PenguinMod's terms of service page
      */
-    terms: "/terms",
+    terms: `${PUBLIC_STUDIO_URL}/terms`,
 
     /**
      * PenguinMod's privacy policy page
      */
-    privacy: "/privacy",
+    privacy: `${PUBLIC_STUDIO_URL}/privacy`,
 
     /**
      * PenguinMod's guideline pages for services
