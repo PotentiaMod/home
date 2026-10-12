@@ -438,8 +438,8 @@
                 {/if}
             {:else}
                 <img
-                    src="/penguins/frontpage.svg"
-                    alt="PenguinMod"
+                    src="penguins/frontpage.svg"
+                    alt="PotentiaMod"
                     style="margin-right: 8rem;"
                 />
             {/if}
@@ -448,7 +448,7 @@
         {#if langDecided && currentLang != "en" && !loggedIn}
             <div class="section-language-warning">
                 <img
-                    src="/warning.png"
+                    src="warning.png"
                     draggable="false"
                     style="height: 24px; margin-right: 6px"
                     alt="Warning"
@@ -491,7 +491,7 @@
 
     {#if langDecided && currentLang != "en" && loggedIn}
         <div class="section-language-warning">
-            <img src="/warning.png" draggable="false" alt="Warning" />
+            <img src="warning.png" draggable="false" alt="Warning" />
             <p>
                 <LocalizedText
                     text="PotentiaMod is made by an only one English-speaking developer. Expect minor issues and sorry for any translation errors."
@@ -501,10 +501,9 @@
             </p>
         </div>
     {/if}
-
-<center><img src="logo.png" alt="PotentiaMod" style="width: 150px"></center>
     <p style="width: 100%; text-align: center;">
         <i>
+<center><img src="logo.png" alt="PotentiaMod" style="width: 150px"></center>
             <LocalizedText
                 text="Scratch Note: You can only mention PotentiaMod if there is a bug, please."
                 key="home.scratchnote"
@@ -562,7 +561,7 @@
                         <button class="welcome-back-button">
                             <div class="welcome-back-icon-container">
                                 <img
-                                    src="/messagesstatic/create.svg"
+                                    src="messagesstatic/create.svg"
                                     alt="Create"
                                     draggable="false"
                                 />
@@ -578,7 +577,7 @@
                         <button class="welcome-back-button">
                             <div class="welcome-back-icon-container">
                                 <img
-                                    src="/messagesstatic/mystuff.svg"
+                                    src="messagesstatic/mystuff.svg"
                                     alt="My Stuff"
                                     draggable="false"
                                 />
@@ -597,7 +596,7 @@
                         <button class="welcome-back-button">
                             <div class="welcome-back-icon-container">
                                 <img
-                                    src="/messagesstatic/profile.svg"
+                                    src="messagesstatic/profile.svg"
                                     alt="Profile"
                                     draggable="false"
                                 />
@@ -875,7 +874,7 @@
                     >
                         {#if projectsRateLimited}
                             <img
-                                src="/errors/429.svg"
+                                src="errors/429.svg"
                                 alt="Ratelimit Error"
                                 style="width: 12rem"
                             />
@@ -888,8 +887,8 @@
                             </p>
                         {:else}
                             <img
-                                src="/penguins/server.svg"
-                                alt="Server Penguin"
+                                src="penguins/server.svg"
+                                alt="Server Dragon"
                                 style="width: 15rem"
                             />
                             <p>
@@ -939,7 +938,7 @@
                     >
                         {#if projectsRateLimited}
                             <img
-                                src="/errors/429.svg"
+                                src="errors/429.svg"
                                 alt="Ratelimit Error"
                                 style="width: 12rem"
                             />
@@ -952,8 +951,8 @@
                             </p>
                         {:else}
                             <img
-                                src="/penguins/server.svg"
-                                alt="Server Penguin"
+                                src="penguins/server.svg"
+                                alt="Server Dragon"
                                 style="width: 15rem"
                             />
                             <p>
@@ -1003,7 +1002,7 @@
                         >
                             {#if projectsRateLimited}
                                 <img
-                                    src="/errors/429.svg"
+                                    src="errors/429.svg"
                                     alt="Ratelimit Error"
                                     style="width: 12rem"
                                 />
@@ -1016,8 +1015,8 @@
                                 </p>
                             {:else}
                                 <img
-                                    src="/penguins/server.svg"
-                                    alt="Server Penguin"
+                                    src="penguins/server.svg"
+                                    alt="Server Dragon"
                                     style="width: 15rem"
                                 />
                                 <p>
@@ -1059,7 +1058,7 @@
                 "home.sections.todaysprojects",
                 currentLang,
             )}
-            seemore={`/search?q=newest%3A`}
+            seemore={`https://penguinmod.com/search?q=newest%3A`}
             style="width:65%;"
             stylec="height: 244px;overflow-x:auto;overflow-y:hidden;"
         >
@@ -1074,7 +1073,7 @@
                     >
                         {#if projectsRateLimited}
                             <img
-                                src="/errors/429.svg"
+                                src="errors/429.svg"
                                 alt="Ratelimit Error"
                                 style="width: 12rem"
                             />
@@ -1087,8 +1086,8 @@
                             </p>
                         {:else}
                             <img
-                                src="/penguins/server.svg"
-                                alt="Server Penguin"
+                                src="penguins/server.svg"
+                                alt="Server Dragon"
                                 style="width: 15rem"
                             />
                             <p>
@@ -1108,7 +1107,7 @@
 
         {#if isAprilFools()}
             <button class="cat-button" on:click={catSpeak}>
-                <img src="/cat/dave.png" alt="cat" />
+                <img src="cat/dave.png" alt="cat" />
                 <p>{catText}</p>
             </button>
         {/if}
@@ -1117,7 +1116,7 @@
     <div class="footer">
         <p>
             <LocalizedText
-                text="PenguinMod is not affiliated with Scratch, TurboWarp, the Scratch Team, or the Scratch Foundation."
+                text="PotentiaMod is not affiliated with Scratch, TurboWarp, the Scratch Team, or the Scratch Foundation."
                 key="home.footer.notaffiliated"
                 lang={currentLang}
             />
@@ -1181,7 +1180,7 @@
                 </p>
                 <a
                     target="_blank"
-                    href={"https://github.com/PenguinMod/PenguinMod-Home/issues"}
+                    href={"https://github.com/PotentiaMod/home/issues"}
                 >
                     <LocalizedText
                         text="Report an issue"
@@ -1189,18 +1188,6 @@
                         lang={currentLang}
                     />
                 </a>
-                <a target="_blank" href={LINK.wiki}>
-                    <LocalizedText
-                        text="Wiki"
-                        key="home.footer.sections.community.wiki"
-                        lang={currentLang}
-                    />
-                </a>
-                <a
-                    target="_blank"
-                    href={`https://penguinmod.com/redirect?t=${encodeURIComponent(btoa(LINK.discord))}`}
-                    >Discord</a
-                >
             </div>
             <div class="footer-section">
                 <p>
@@ -1224,7 +1211,7 @@
                         lang={currentLang}
                     />
                 </a>
-                <a target="_blank" href={"/guidelines/uploading"}>
+                <a target="_blank" href={"guidelines/uploading"}>
                     <LocalizedText
                         text="Uploading Guidelines"
                         key="home.footer.sections.info.guidelines"
@@ -1248,6 +1235,7 @@
                     />
                 </p>
                 <a href={"/support"}>PenguinMod</a>
+                <a target="_blank" href={LINK.donate.turbowarp}>TurboWarp</a>
                 <a target="_blank" href={LINK.donate.scratch}>Scratch</a>
             </div>
         </div>
