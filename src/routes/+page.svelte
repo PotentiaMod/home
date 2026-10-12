@@ -501,7 +501,8 @@
             </p>
         </div>
     {/if}
-</center><img src="logo.png" alt="PotentiaMod" style="width: 150px"></center>
+
+<center><img src="logo.png" alt="PotentiaMod" style="width: 150px"></center>
     <p style="width: 100%; text-align: center;">
         <i>
             <LocalizedText
