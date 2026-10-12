@@ -1281,14 +1281,14 @@
         width: 100%;
         padding: 24px 0px 48px;
         border-top: rgba(0, 0, 0, 0.3) 1px solid;
-        background: #00c3ff15;
+        background: #4800CC15;
         font-weight: bold;
         margin-top: 4px;
         /* border-top-left-radius: 20%; */
         /* border-top-right-radius: 20%; */
     }
     .footer a {
-        color: dodgerblue;
+        color: #6D1EFF;
         font-weight: normal;
         margin: 2px 0px;
     }
@@ -1310,7 +1310,7 @@
         /* border-top: rgba(255, 255, 255, 0.1) 1px solid; */
         border-top: rgba(255, 255, 255, 0.3) 1px solid;
         /* background: transparent; */
-        /* background: #0059ff15; */
+        /* background: #5900FF15; */
         /* border-top-left-radius: 20%; */
         /* border-top-right-radius: 20%; */
     }
@@ -1354,7 +1354,7 @@
     }
 
     .section-info {
-        background: #00c3ffad;
+        background: #4800CCad;
         height: 24rem;
         color: white;
         display: flex;
@@ -1368,7 +1368,7 @@
         justify-content: space-around;
     }
     .section-links {
-        background: #00c3ff28;
+        background: #4800CC28;
         color: white;
         display: flex;
         flex-direction: row;
