@@ -40,7 +40,7 @@ export default {
         /**
          * PenguinMod's project uploading guidelines
          */
-        projects: `${PUBLIC_STUDIO_URL}/PenguinMod-Guidelines/PROJECTS`
+        projects: `https://studio.penguinmod.com/PenguinMod-Guidelines/PROJECTS`
     },
 
     /**
@@ -48,7 +48,8 @@ export default {
      */
     donate: {
         scratch: "https://www.scratchfoundation.org/donate",
-        turbowarp: "https://github.com/sponsors/GarboMuffin"
+        turbowarp: "https://github.com/sponsors/GarboMuffin",
+        penguinmod: "https://studio.penguinmod.com/support"
     },
 
     /**
@@ -64,7 +65,7 @@ export default {
     /**
      * PenguinMod's home page
      */
-    home: "https://penguinmod.com/",
+    home: "https://potentiamod.github.io/home",
 
     /**
      * PenguinMod's packager page
@@ -94,7 +95,7 @@ export default {
     /**
      * PenguinMod's github page
      */
-    github: "https://github.com/PenguinMod/",
+    github: "https://github.com/PotentiaMod/",
 
     /**
      * PenguinMod's basic API
