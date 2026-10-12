@@ -339,8 +339,8 @@
         property="twitter:description"
         content="The area where featured projects and community stuff & info is shown."
     />
-    <meta property="og:url" content="https://penguinmod.com/" />
-    <meta property="twitter:url" content="https://penguinmod.com/" />
+    <meta property="og:url" content="https://potentiamod.github.io/home/" />
+    <meta property="twitter:url" content="https://potentiamod.github.io/home/" />
     <meta
         name="google-site-verification"
         content="07oAYybKa_CH2le7AvPJkNNtwhZSq_G0V4d9P7AIZYE"
@@ -501,10 +501,9 @@
             </p>
         </div>
     {/if}
-
+</center><img src="logo.png" alt="PotentiaMod" style="width: 150px"></center>
     <p style="width: 100%; text-align: center;">
         <i>
-           <img src="logo.png" alt="PotentiaMod" style="width: 150px">
             <LocalizedText
                 text="Scratch Note: You can only mention PotentiaMod if there is a bug, please."
                 key="home.scratchnote"
