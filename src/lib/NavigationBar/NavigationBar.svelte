@@ -354,7 +354,7 @@
     style={isAprilFirst ? `background-color: ${randomColor} !important` : ""}
 >
     <a class="logo" href="/">
-        <img class="logo-image" src="https://potentiamod.github.io/home-new/logo.png" alt="PotentiaMod" />
+        <img class="logo-image" src="https://potentiamod.github.io/home-new/navicon.png" alt="PotentiaMod" />
     </a>
     <div style="margin-right: 12px;" />
     <div class="logo-launcher-margin" />
@@ -475,7 +475,7 @@
         </button>
     {/if}
     <BarPage
-        label="<img src='http://penguinmod.com/globe.svg' alt='LanguageSwitcher'><img src='/dropdown-caret.png' style='margin: 0 4px' alt='v'>"
+        label="<img src='http://penguinmod.com/globe.svg' alt='LanguageSwitcher'><img src='http://penguinmod.com/dropdown-caret.png' style='margin: 0 4px' alt='v'>"
         style={"padding: 0.5rem; position: absolute; left: 4px;" +
             (Object.keys(availableLanguages).length <= 1
                 ? "display: none;"
