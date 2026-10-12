@@ -354,7 +354,7 @@
     style={isAprilFirst ? `background-color: ${randomColor} !important` : ""}
 >
     <a class="logo" href="/">
-        <img class="logo-image" src="/navicon.png" alt="PenguinMod" />
+        <img class="logo-image" src="/navicon.png" alt="PotentiaMod" />
     </a>
     <div style="margin-right: 12px;" />
     <div class="logo-launcher-margin" />
@@ -489,10 +489,10 @@
 
 <style>
     :root {
-        --penguinmod-color: #00c3ff;
+        --penguinmod-color: #4800cc;
     }
     :global(body.dark-mode) {
-        --penguinmod-color: #009ccc;
+        --penguinmod-color: #220099;
     }
 
     .bar {
