@@ -1,6 +1,6 @@
 <script>
     import { onMount } from "svelte";
-    import { package, user-group, book-open-text, code, laptop, package-plus, desktop } from "lucide-svelte";
+    import { blocks, user-group, book-open-text, code, laptop, package-plus, desktop } from "lucide-svelte";
     import { page } from "$app/stores";
     import { browser } from "$app/environment";
 
@@ -466,7 +466,7 @@
 
         <div class="section-links">
             <Button link="https://potentiamod.github.io/packager">
-    			<package size={18} />
+    			<blocks size={18} />
                 <LocalizedText
                     text="Packager"
                     key="home.footer.sections.website.packager"
