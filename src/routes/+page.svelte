@@ -1107,7 +1107,7 @@
 
         {#if isAprilFools()}
             <button class="cat-button" on:click={catSpeak}>
-                <img src="cat/dave.png" alt="cat" />
+                <img src="https://64.media.tumblr.com/94db8ad5b10668ec5f206ea3664fc64b/tumblr_n48mz3UTeG1tw0802o1_1280.pnj" alt="Dang cat lol" />
                 <p>{catText}</p>
             </button>
         {/if}
