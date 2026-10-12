@@ -6,7 +6,7 @@
 	Zap, ClockPlus, Package, FileInput, RotateCw,
     Bot, Download, ArchiveRestore, House, Cloud, Laptop,
 	Settings, PackagePlus, Puzzle, AppWindow, BookOpenText,
-    Bookmark, SlidersHorizontal, Save, GitBranch, UserGroup,
+    Bookmark, SlidersHorizontal, Save, GitBranch, User,
 	FileCog, Bug, Database, Undo, Redo, Handshake, Desktop, 
 	} from "lucide-svelte";
     import { page } from "$app/stores";
@@ -482,7 +482,7 @@
                 />
             </Button>
             <Button link="https://potentiamod.github.io/credits.html">
-			<UserGroup size={18} />
+			<User size={18} />
                 <LocalizedText
                     text="Credits"
                     key="home.footer.sections.website.credits"
