@@ -355,8 +355,7 @@
 >
     <a class="logo" href="https://potentiamod.github.io/home-new/">
         <img class="logo-image" src="https://potentiamod.github.io/home-new/navicon.png" alt="PotentiaMod" />
-		<span class="logomark">PotentiaMod</span>
-    </a>
+    </a><span class="logomark">PotentiaMod</span>
     <div style="margin-right: 12px;" />
     <div class="logo-launcher-margin" />
     <BarPage
