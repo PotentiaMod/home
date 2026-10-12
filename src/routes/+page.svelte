@@ -502,7 +502,7 @@
         </div>
     {/if}
 
-    <center><img src="/logo.png" alt="GaiaMod" style="width: 20rem"></center>
+    <center><img src="logo.png" alt="PotentiaMod" style="width: 20rem"></center>
     <p style="width: 100%; text-align: center;">
         <i>
             <LocalizedText
@@ -528,7 +528,7 @@
                     userLink={`https://github.com/gaiawindwave90`}
                     text="Try out this editor!"
                     author="gaiawindwave90"
-                    image="https://avatars.githubusercontent.com/u/4597024?v=4"
+                    image="https://avatars.githubusercontent.com/u/4597024"
                 />
                 <a
                     target="_blank"
