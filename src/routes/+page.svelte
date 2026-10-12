@@ -1,6 +1,5 @@
 <script>
     import { onMount } from "svelte";
-    import { blocks, user-group, book-open-text, code, laptop, package-plus, desktop } from "lucide-svelte";
     import { page } from "$app/stores";
     import { browser } from "$app/environment";
 
@@ -466,7 +465,6 @@
 
         <div class="section-links">
             <Button link="https://potentiamod.github.io/packager">
-    			<blocks size={18} />
                 <LocalizedText
                     text="Packager"
                     key="home.footer.sections.website.packager"
@@ -474,7 +472,6 @@
                 />
             </Button>
             <Button link="https://potentiamod.github.io/credits.html">
-			<user-group size={18} />
                 <LocalizedText
                     text="Credits"
                     key="home.footer.sections.website.credits"
@@ -482,23 +479,18 @@
                 />
             </Button>
 			<Button link="https://github.com/PotentiaMod">
-			<code size={18} />
                 GitHub
             </Button>
             <Button link="https://potentiamod.github.io/docs">
-			<book-open-text size={18} />
                 Documents
             </Button>
             <Button link="https://potentiamod.github.io/scratch2">
-			<laptop size={18} />
                 Scratch 2
             </Button>
             <Button link="https://potentiamod.github.io/pot-extensions">
-			<package-plus size={18} />
                 Extensions
             </Button>
             <Button link="https://potentiamod.github.io/desktop.html">
-			<desktop size={18} />
                 Desktop
             </Button>
         </div>
