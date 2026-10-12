@@ -354,12 +354,12 @@
     style={isAprilFirst ? `background-color: ${randomColor} !important` : ""}
 >
     <a class="logo" href="/">
-        <img class="logo-image" src="/navicon.png" alt="PotentiaMod" />
+        <img class="logo-image" src="http://potentiamod.github.io/images/navicon.png" alt="PotentiaMod" />
     </a>
     <div style="margin-right: 12px;" />
     <div class="logo-launcher-margin" />
     <BarPage
-        label="<img src='/moon.svg' alt='ThemeSwitcher'>"
+        label="<img src='http://penguinmod.com/moon.svg' alt='ThemeSwitcher'>"
         style="padding:0.5rem"
         classActor={"themeSwitcher"}
         on:click={switchTheme}
@@ -377,7 +377,7 @@
     </div>
     <div class="only-launcher">
         <BarPage id="__home_navigation_create_button">
-            <img src="/create.png" alt="Create" />
+            <img src="http://penguinmod.com/create.png" alt="Create" />
         </BarPage>
     </div>
     <BarSearch
@@ -401,18 +401,18 @@
 			/>
 		</div>
 		<div class="discord-button-icon">
-			<img src="/discord_white.png" alt="Discord" />
+			<img src="http://penguinmod.com/discord_white.png" alt="Discord" />
 		</div>
 	</BarButton> -->
     <!-- <BarPage
 		link={LINK.discord}
-		label="<img src='/discord_white.png' width='25' alt='Discord'>"
+		label="<img src='http://penguinmod.com/discord_white.png' width='25' alt='Discord'>"
 		style="padding:0.5rem"
 	/> -->
     {#if loggedIn === true}
         <BarPage
             link="/messages"
-            label={"<img src='/messagesstatic/messages.svg' width='25' alt='Messages'>"}
+            label={"<img src='http://penguinmod.com/messagesstatic/messages.svg' width='25' alt='Messages'>"}
             style="padding:0.5rem"
             title="messages.title"
             lang={currentLang}
@@ -429,7 +429,7 @@
         </BarPage>
         <BarPage
             link="/mystuff"
-            label="<img src='/messagesstatic/mystuff.svg' width='25' alt='My Stuff'>"
+            label="<img src='http://penguinmod.com/messagesstatic/mystuff.svg' width='25' alt='My Stuff'>"
             style="padding:0.5rem"
             title="mystuff.title"
             lang={currentLang}
@@ -438,7 +438,7 @@
     {#if (isAdmin || isApprover) && loggedIn}
         <BarPage
             link="/panel"
-            label="<img src='/messagesstatic/panel.svg' width='25' alt='Panel'>"
+            label="<img src='http://penguinmod.com/messagesstatic/panel.svg' width='25' alt='Panel'>"
             style="padding:0.5rem"
             title="Admin Panel"
         />
@@ -451,7 +451,7 @@
                 lang={currentLang}
             />
         </BarPage>
-        <BarPage on:click={() => (location.href = "/signup")}>
+        <BarPage on:click={() => (location.href = "http://penguinmod.com/signup")}>
             <LocalizedText
                 text="Sign up"
                 key="navigation.signup"
@@ -475,7 +475,7 @@
         </button>
     {/if}
     <BarPage
-        label="<img src='/globe.svg' alt='LanguageSwitcher'><img src='/dropdown-caret.png' style='margin: 0 4px' alt='v'>"
+        label="<img src='http://penguinmod.com/globe.svg' alt='LanguageSwitcher'><img src='/dropdown-caret.png' style='margin: 0 4px' alt='v'>"
         style={"padding: 0.5rem; position: absolute; left: 4px;" +
             (Object.keys(availableLanguages).length <= 1
                 ? "display: none;"
