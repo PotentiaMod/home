@@ -504,7 +504,7 @@
 
     <p style="width: 100%; text-align: center;">
         <i>
-           <img src="logo.png" alt="PotentiaMod" style="width: 25px">
+           <img src="logo.png" alt="PotentiaMod" style="width: 150px">
             <LocalizedText
                 text="Scratch Note: You can only mention PotentiaMod if there is a bug, please."
                 key="home.scratchnote"
@@ -746,27 +746,13 @@
                 <div class="category-news">
                     <div class="category-news-content">
                         <h2 style="margin-block:4px;">
-                            Upcoming PenguinMod 4th Anniversary!!
+                            Hello!
                         </h2>
                         <div style="width:100%">
                             <p>
-                                Hello everyone! We are making another anniversary video!
-                                <b>If you would like to submit a project for a chance of being
-                                featured in the video</b>, please fill out this Google Form!
+                                Nothing's here yet!
                             </p>
-                            <a href="https://forms.gle/yQ7PmRYwGnTG9kRL6">
-                                https://forms.gle/yQ7PmRYwGnTG9kRL6
-                            </a>
-                            <p><i>The form closes on September 7 at 12AM EST</i></p>
-                            <p><b>Rules:</b></p>
-                            <ul>
-                                <li>1 Project per PenguinMod user (Alt accounts not allowed)</li>
-                                <li>Project must follow the PM guidelines</li>
-                                <li>Project must have been made between October 17, 2025 to October 17, 2026</li>
-                            </ul>
-                            <p><b>If you spam this form, you will be disqualified from this event and your account may face punishment.</b></p>
-                            <p><i>The form closes on September 7 at 12AM EST</i></p>
-                            <p><i>(Note: You do not need to sign in to Google to fill out this form)</i></p>
+                           
                         </div>
                     </div>
                     <div class="category-footer">
