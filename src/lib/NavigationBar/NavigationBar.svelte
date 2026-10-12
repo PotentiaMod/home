@@ -354,7 +354,7 @@
     style={isAprilFirst ? `background-color: ${randomColor} !important` : ""}
 >
     <a class="logo" href="/">
-        <img class="logo-image" src="http://potentiamod.github.io/images/navicon.png" alt="PotentiaMod" />
+        <img class="logo-image" src="http://potentiamod.github.io/scratch-gui/images/navicon.png" alt="PotentiaMod" />
     </a>
     <div style="margin-right: 12px;" />
     <div class="logo-launcher-margin" />
@@ -367,7 +367,7 @@
         lang={currentLang}
     />
     <div class="only-non-launcher">
-        <BarPage link={LINK.editor}>
+        <BarPage link="http://potentiamod.github.io/editor.html">
             <LocalizedText
                 text="Create"
                 key="navigation.create"
@@ -471,7 +471,7 @@
                 class="profile-picture"
             />
             <p>{accountUsername}</p>
-            <img src="/dropdown-caret.png" style="margin: 0 4px" alt="v" />
+            <img src="http://penguinmod.com/dropdown-caret.png" style="margin: 0 4px" alt="v" />
         </button>
     {/if}
     <BarPage
