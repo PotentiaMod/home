@@ -70,7 +70,7 @@ export default {
     /**
      * PenguinMod's packager page
      */
-    packager: `${PUBLIC_STUDIO_URL}/PenguinMod-Packager/`,
+    packager: `${PUBLIC_STUDIO_URL}/packager/`,
 
     /**
      * PenguinMod's unofficial wiki
