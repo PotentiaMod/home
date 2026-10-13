@@ -353,8 +353,8 @@
     class="bar"
     style={isAprilFirst ? `background-color: ${randomColor} !important` : ""}
 >
-    <a class="logo" href="https://potentiamod.github.io/home-new/">
-        <img class="logo-image" src="https://potentiamod.github.io/home-new/navicon.png" alt="PotentiaMod" />
+    <a class="logo" href="https://potentiamod.github.io/home/">
+        <img class="logo-image" src="https://potentiamod.github.io/home/navicon.png" alt="PotentiaMod" />
     </a><span class="logomark">PotentiaMod</span>
     <div style="margin-right: 12px;" />
     <div class="logo-launcher-margin" />
