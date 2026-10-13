@@ -85,18 +85,18 @@
                     );
 
                     const permittedPages = [
-                        "/unfinishedsignup",
-                        "/terms",
-                        "/privacy",
-                        "/contact",
-                        "/guidelines/uploading",
+                        "https://penguinmod.com/unfinishedsignup",
+                        "https://penguinmod.com/terms",
+                        "https://potentiamod.github.io/privacy",
+                        "https://penguinmod.com/contact",
+                        "https://penguinmod.com/guidelines/uploading",
                     ];
                     if (
                         (!countryEntered || !birthdayEntered) &&
                         !permittedPages.includes(location.pathname)
                     ) {
                         const newUrl = new URL(location.href);
-                        newUrl.pathname = "/unfinishedsignup";
+                        newUrl.pathname = "https://penguinmod.com/unfinishedsignup";
                         if (!countryEntered && birthdayEntered) {
                             newUrl.search = "?fillout=country";
                         }
@@ -322,7 +322,7 @@
             {/if}
         </button>
     </a>
-    <a href="/mystuff">
+    <a href="https://penguinmod.com/mystuff">
         <button>
             <LocalizedText
                 text="My Stuff"
@@ -331,7 +331,7 @@
             />
         </button>
     </a>
-    <a href="/settings">
+    <a href="https://penguinmod.com/settings">
         <button>
             <LocalizedText
                 text="Settings"
@@ -411,7 +411,7 @@
 	/> -->
     {#if loggedIn === true}
         <BarPage
-            link="/messages"
+            link="https://penguinmod.com/messages"
             label={"<img src='http://penguinmod.com/messagesstatic/messages.svg' width='25' alt='Messages'>"}
             style="padding:0.5rem"
             title="messages.title"
@@ -428,7 +428,7 @@
             {/if}
         </BarPage>
         <BarPage
-            link="/mystuff"
+            link="https://penguinmod.com/mystuff"
             label="<img src='http://penguinmod.com/messagesstatic/mystuff.svg' width='25' alt='My Stuff'>"
             style="padding:0.5rem"
             title="mystuff.title"
