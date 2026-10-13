@@ -93,7 +93,7 @@
         class="project-image"
     >
         <img
-            src={`${LINK.projects}api/v1/projects/getproject?projectID=${id}&requestType=thumbnail`}
+            src={`https://projects.penguinmod.com/api/v1/projects/getproject?projectID=${id}&requestType=thumbnail`}
             alt="Project Thumbnail"
             class="project-image"
         />
@@ -104,7 +104,7 @@
         class="project-author"
     >
         <img
-            src={`${PUBLIC_API_URL}/api/v1/users/getpfp?username=${author.username}`}
+            src={`https://projects.penguinmod.com/api/v1/users/getpfp?username=${author.username}`}
             alt="Project Author"
             class="project-author"
         />
