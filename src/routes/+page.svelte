@@ -772,7 +772,7 @@
                                 ]}
                             {:else}
                                 <LocalizedText
-                                    text="PenguinNews is not translated in your language. Sorry! :("
+                                    text="PotentiaMod News is not translated in your language. Sorry! :("
                                     key="home.sections.informational.notranslation"
                                     lang={currentLang}
                                 />
@@ -1241,7 +1241,7 @@
                         lang={currentLang}
                     />
                 </p>
-                <a href={"https://penguinmod.com/support"}>PenguinMod</a>
+                <a href={"https://penguinmod.com/support"}>PotentiaMod</a>
                 <a target="_blank" href={LINK.donate.turbowarp}>TurboWarp</a>
                 <a target="_blank" href={LINK.donate.scratch}>Scratch</a>
             </div>
