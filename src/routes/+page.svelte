@@ -1241,7 +1241,7 @@
                         lang={currentLang}
                     />
                 </p>
-                <a href={"https://penguinmod.com/support"}>PotentiaMod</a>
+                <a href={"https://penguinmod.com/support"}>PenguinMod</a>
                 <a target="_blank" href={LINK.donate.turbowarp}>TurboWarp</a>
                 <a target="_blank" href={LINK.donate.scratch}>Scratch</a>
             </div>
