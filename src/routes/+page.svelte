@@ -490,6 +490,9 @@
             <Button link="https://potentiamod.github.io/pot-extensions">
                 Extensions
             </Button>
+            <Button link="https://potentiamod.github.io/mirror">
+                Mirror
+            </Button>
             <Button link="https://potentiamod.github.io/desktop.html">
                 Desktop
             </Button>
