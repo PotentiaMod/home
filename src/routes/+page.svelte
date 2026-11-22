@@ -850,7 +850,7 @@
         <EventComponent />
     </div>
 
-    <-- <div class="section-projects">
+     <div class="section-projects">
         <ContentCategory
             header={TranslationHandler.text(
                 "home.sections.weeklyfeatured",
@@ -1121,7 +1121,7 @@
                 <p>{catText}</p>
             </button>
         {/if}
-    </div> -->
+    </div>
 
     <div class="footer">
         <p>
