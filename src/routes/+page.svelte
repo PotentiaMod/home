@@ -365,13 +365,13 @@
         buttonHref={"https://potentiamod.github.io/"}
     />
     <StatusAlert />
-    <Alert
+   <-- <Alert
         onlyShowID={"downtime:_3"}
         text={"Be aware! The servers are broken by the moment this site is made."}
         textBreakup={true}
         backColor={"Yellow"}
         textColor={"Black"}
-    />
+    /> -->
 
     {#if !loggedIn}
         <div class="section-info">
@@ -850,7 +850,7 @@
         <EventComponent />
     </div>
 
-    <div class="section-projects">
+    <-- <div class="section-projects">
         <ContentCategory
             header={TranslationHandler.text(
                 "home.sections.weeklyfeatured",
@@ -1121,7 +1121,7 @@
                 <p>{catText}</p>
             </button>
         {/if}
-    </div>
+    </div> -->
 
     <div class="footer">
         <p>
