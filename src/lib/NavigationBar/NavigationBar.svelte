@@ -423,8 +423,8 @@
 		label="<img src='http://penguinmod.com/discord_white.png' width='25' alt='Discord'>"
 		style="padding:0.5rem"
 	/> -->
-    <!--{#if loggedIn === true}
-        <BarPage
+    {#if loggedIn === true}
+        <!-- <BarPage
             link="https://penguinmod.com/messages"
             label={"<img src='http://penguinmod.com/messagesstatic/messages.svg' width='25' alt='Messages'>"}
             style="padding:0.5rem"
@@ -440,41 +440,41 @@
                     {/if}
                 </div>
             {/if}
-        </BarPage>
-        <BarPage
+        </BarPage> -->
+        <!-- <BarPage
             link="https://penguinmod.com/mystuff"
             label="<img src='http://penguinmod.com/messagesstatic/mystuff.svg' width='25' alt='My Stuff'>"
             style="padding:0.5rem"
             title="mystuff.title"
             lang={currentLang}
-        />
-    {/if}-->
-    <!--{#if (isAdmin || isApprover) && loggedIn}
-        <BarPage
+        /> -->
+    {/if}
+    {#if (isAdmin || isApprover) && loggedIn}
+        <!-- <BarPage
             link="/panel"
             label="<img src='http://penguinmod.com/messagesstatic/panel.svg' width='25' alt='Panel'>"
             style="padding:0.5rem"
             title="Admin Panel"
-        />
-    {/if}-->
-    <!--{#if loggedIn === false}
-        <BarPage on:click={login}>
+        /> -->
+    {/if}
+    {#if loggedIn === false}
+        <!-- <BarPage on:click={login}>
             <LocalizedText
                 text="Sign in"
                 key="navigation.login"
                 lang={currentLang}
             />
-        </BarPage>
-        <BarPage on:click={() => (location.href = "http://penguinmod.com/signup")}>
+        </BarPage> -->
+        <!-- <BarPage on:click={() => (location.href = "http://penguinmod.com/signup")}>
             <LocalizedText
                 text="Sign up"
                 key="navigation.signup"
                 lang={currentLang}
             />
-        </BarPage>
+        </BarPage> -->
     {:else if loggedIn === true}
         <!-- svelte-ignore a11y-img-redundant-alt -->
-        <button
+        <!-- <button
             class="profile-dropdown"
             bind:this={accountButton}
             on:click={openAccountMenu}
@@ -486,8 +486,8 @@
             />
             <p>{accountUsername}</p>
             <img src="http://penguinmod.com/dropdown-caret.png" style="margin: 0 4px" alt="v" />
-        </button>
-    {/if}-->
+        </button> -->
+    {/if}
     <BarPage
         label="<img src='http://penguinmod.com/globe.svg' alt='LanguageSwitcher'><img src='http://penguinmod.com/dropdown-caret.png' style='margin: 0 4px' alt='v'>"
         style={"padding: 0.5rem; position: absolute; left: 4px;" +
