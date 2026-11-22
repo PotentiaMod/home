@@ -394,13 +394,27 @@
             <img src="https://cdn-icons-png.flaticon.com/512/20/20673.png" alt="FaceBook" />
         </BarPage>
     </div>
-    <BarSearch
+    <!-- <BarSearch
         placeholder={Translations.textSafe(
             "navigation.search",
             currentLang,
             "Search for projects...",
         )}
-    />
+    /> -->
+<div class="only-non-launcher">
+        <BarPage link="https://potentiamod.github.io/settings">
+            <LocalizedText
+                text="Settings"
+                key="navigation.potsettings"
+                lang={currentLang}
+            />
+        </BarPage>
+    </div>
+    <div class="only-launcher">
+        <BarPage id="__home_navigation_pot_settings">
+            <img src="https://potentiamod.github.io/home/pencil_white.png" alt="Settings" />
+        </BarPage>
+    </div>
     <!-- <BarButton
 		highlighted="true"
 		link={LINK.discord}
