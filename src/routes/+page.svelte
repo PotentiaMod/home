@@ -365,13 +365,13 @@
         buttonHref={"https://potentiamod.github.io/"}
     />
     <StatusAlert />
-   <-- <Alert
+   <Alert
         onlyShowID={"downtime:_3"}
         text={"Be aware! The servers are broken by the moment this site is made."}
         textBreakup={true}
         backColor={"Yellow"}
         textColor={"Black"}
-    /> -->
+    />
 
     {#if !loggedIn}
         <div class="section-info">
