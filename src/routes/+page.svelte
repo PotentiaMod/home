@@ -545,7 +545,7 @@
                 >
                     <button class="update-image-wrapper">
                         <img
-                            src="https://potentiamod.github.io/images/screencap-light.png"
+                            src="https://potentiamod.github.io/scratch-gui/images/screencap-light.png"
                             alt="Screencap"
                             class="update-image"
                         />
@@ -851,267 +851,23 @@
     </div>
 
      <div class="section-projects">
-        <ContentCategory
-            header={TranslationHandler.text(
-                "home.sections.weeklyfeatured",
-                currentLang,
-            )}
-            seemore={`https://penguinmod.com/search?q=featured%3A`}
+	 <ContentCategory
+            header="Discover PotentiaMod"
             style="width:65%;"
             stylec="height: 244px;overflow-x:auto;overflow-y:hidden;"
         >
             <div class="project-list">
-                {#if projects.featured.length > 0}
-                    {#each projects.featured as project}
-                        <Project {...project} />
-                    {/each}
-                {:else if projectsLoaded === true}
-                    <div
+                <div
                         style="display:flex;flex-direction:column;align-items: center;width: 100%;"
-                    >
-                        <PenguinConfusedSVG width="8rem" />
-                        <p>
-                            <LocalizedText
-                                text="Nothing found. You can help feature projects by clicking the yellow checkmark below them."
-                                key="home.none.featured"
-                                lang={currentLang}
-                            />
-                        </p>
+                    >							
+                            <ul>
+<li>🚀Easily load Scratch Projects in seconds!</li>
+<li>🧩PotentiaMod has a collection of extensions that you can enjoy, including Scratch, TurboWarp, GaiaMod, and new PotentiaMod ones!&nbsp;</li>
+<li>⚡PotentiaMod is based on TurboWarp, a Scratch mod known for its compiler so all projects run faster than a speed of lightning!</li>
+<li>🎨Customize PotentiaMod! Pick accents, GUI colors, and activate built-in addons. This makes PotentiaMod yours!</li>
+<li>▶️The features listed here are just the tip of the iceberg, so there's more to come. Click "try it out" and see the others!</li>
+</ul>
                     </div>
-                {:else if projectsFailed === true}
-                    <div
-                        style="display:flex;flex-direction:column;align-items: center;width: 100%;"
-                    >
-                        {#if projectsRateLimited}
-                            <img
-                                src="errors/429.svg"
-                                alt="Ratelimit Error"
-                                style="width: 12rem"
-                            />
-                            <p>
-                                <LocalizedText
-                                    text="Please wait before trying to access this page again."
-                                    key="navigation.error.429"
-                                    lang={currentLang}
-                                />
-                            </p>
-                        {:else}
-                            <img
-                                src="penguins/server.svg"
-                                alt="Server Dragon"
-                                style="width: 15rem"
-                            />
-                            <p>
-                                <LocalizedText
-                                    text="Whoops! Our server's having some problems. Try again later."
-                                    key="home.server.error"
-                                    lang={currentLang}
-                                />
-                            </p>
-                        {/if}
-                    </div>
-                {:else}
-                    <LoadingSpinner />
-                {/if}
-            </div>
-        </ContentCategory>
-        <ContentCategory
-            header={TranslationHandler.text(
-                "home.sections.mostvoted",
-                currentLang,
-            )}
-            seemore={`https://penguinmod.com/search?q=sort%3Avotes%20featured%3Aexclude`}
-            style="width:65%;"
-            stylec="height: 244px;overflow-x:auto;overflow-y:hidden;"
-        >
-            <div class="project-list">
-                {#if projects.voted.length > 0}
-                    {#each projects.voted as project}
-                        <Project {...project} />
-                    {/each}
-                {:else if projectsLoaded === true}
-                    <div
-                        style="display:flex;flex-direction:column;align-items: center;width: 100%;"
-                    >
-                        <PenguinConfusedSVG width="8rem" />
-                        <p>
-                            <LocalizedText
-                                text="Nothing found. You can help feature projects by clicking the yellow checkmark below them."
-                                key="home.none.featured"
-                                lang={currentLang}
-                            />
-                        </p>
-                    </div>
-                {:else if projectsFailed === true}
-                    <div
-                        style="display:flex;flex-direction:column;align-items: center;width: 100%;"
-                    >
-                        {#if projectsRateLimited}
-                            <img
-                                src="errors/429.svg"
-                                alt="Ratelimit Error"
-                                style="width: 12rem"
-                            />
-                            <p>
-                                <LocalizedText
-                                    text="Please wait before trying to access this page again."
-                                    key="navigation.error.429"
-                                    lang={currentLang}
-                                />
-                            </p>
-                        {:else}
-                            <img
-                                src="penguins/server.svg"
-                                alt="Server Dragon"
-                                style="width: 15rem"
-                            />
-                            <p>
-                                <LocalizedText
-                                    text="Whoops! Our server's having some problems. Try again later."
-                                    key="home.server.error"
-                                    lang={currentLang}
-                                />
-                            </p>
-                        {/if}
-                    </div>
-                {:else}
-                    <LoadingSpinner />
-                {/if}
-            </div>
-        </ContentCategory>
-        {#if projects.suggested !== null}
-            <ContentCategory
-                header={TranslationHandler.text(
-                    "home.sections.suggestedforyou",
-                    currentLang,
-                )}
-                style="width:65%;"
-                stylec="height: 244px;overflow-x:auto;overflow-y:hidden;"
-            >
-                <div class="project-list">
-                    {#if projects.suggested.length > 0}
-                        {#each projects.suggested as project}
-                            <Project {...project} />
-                        {/each}
-                    {:else if projectsLoaded === true}
-                        <div
-                            style="display:flex;flex-direction:column;align-items: center;width: 100%;"
-                        >
-                            <PenguinConfusedSVG width="8rem" />
-                            <p>
-                                <LocalizedText
-                                    text="Nothing found. You can fill this section by checking out other people's projects and liking them."
-                                    key="home.none.fyp"
-                                    lang={currentLang}
-                                />
-                            </p>
-                        </div>
-                    {:else if projectsFailed === true}
-                        <div
-                            style="display:flex;flex-direction:column;align-items: center;width: 100%;"
-                        >
-                            {#if projectsRateLimited}
-                                <img
-                                    src="errors/429.svg"
-                                    alt="Ratelimit Error"
-                                    style="width: 12rem"
-                                />
-                                <p>
-                                    <LocalizedText
-                                        text="Please wait before trying to access this page again."
-                                        key="navigation.error.429"
-                                        lang={currentLang}
-                                    />
-                                </p>
-                            {:else}
-                                <img
-                                    src="penguins/server.svg"
-                                    alt="Server Dragon"
-                                    style="width: 15rem"
-                                />
-                                <p>
-                                    <LocalizedText
-                                        text="Whoops! Our server's having some problems. Try again later."
-                                        key="home.server.error"
-                                        lang={currentLang}
-                                    />
-                                </p>
-                            {/if}
-                        </div>
-                    {:else}
-                        <LoadingSpinner />
-                    {/if}
-                </div>
-            </ContentCategory>
-        {/if}
-        {#if projects.tagged.length > 7}
-            <ContentCategory
-                header={String(
-                    TranslationHandler.text(
-                        "home.sections.sortedbytag",
-                        currentLang,
-                    ),
-                ).replace("$1", tagForProjects.slice(1))}
-                seemore={`https://penguinmod.com/search?q=%23${tagForProjects.slice(1)}`}
-                style="width:65%;"
-                stylec="height: 244px;overflow-x:auto;overflow-y:hidden;"
-            >
-                <div class="project-list">
-                    {#each projects.tagged as project}
-                        <Project {...project} />
-                    {/each}
-                </div>
-            </ContentCategory>
-        {/if}
-        <ContentCategory
-            header={TranslationHandler.text(
-                "home.sections.todaysprojects",
-                currentLang,
-            )}
-            seemore={`https://penguinmod.com/search?q=newest%3A`}
-            style="width:65%;"
-            stylec="height: 244px;overflow-x:auto;overflow-y:hidden;"
-        >
-            <div class="project-list">
-                {#if projects.today.length > 0}
-                    {#each projects.today as project}
-                        <Project {...project} />
-                    {/each}
-                {:else if projectsFailed === true}
-                    <div
-                        style="display:flex;flex-direction:column;align-items: center;width: 100%;"
-                    >
-                        {#if projectsRateLimited}
-                            <img
-                                src="errors/429.svg"
-                                alt="Ratelimit Error"
-                                style="width: 12rem"
-                            />
-                            <p>
-                                <LocalizedText
-                                    text="Please wait before trying to access this page again."
-                                    key="navigation.error.429"
-                                    lang={currentLang}
-                                />
-                            </p>
-                        {:else}
-                            <img
-                                src="penguins/server.svg"
-                                alt="Server Dragon"
-                                style="width: 15rem"
-                            />
-                            <p>
-                                <LocalizedText
-                                    text="Whoops! Our server's having some problems. Try again later."
-                                    key="home.server.error"
-                                    lang={currentLang}
-                                />
-                            </p>
-                        {/if}
-                    </div>
-                {:else}
-                    <LoadingSpinner />
-                {/if}
             </div>
         </ContentCategory>
 
