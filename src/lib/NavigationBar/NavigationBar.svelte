@@ -380,6 +380,20 @@
             <img src="http://penguinmod.com/create.png" alt="Create" />
         </BarPage>
     </div>
+<div class="only-non-launcher">
+        <BarPage link="https://www.facebook.com/profile.php?id=61596744569245">
+            <LocalizedText
+                text="FaceBook Page"
+                key="navigation.facebook"
+                lang={currentLang}
+            />
+        </BarPage>
+    </div>
+    <div class="only-launcher">
+        <BarPage id="__home_navigation_facebook_button">
+            <img src="https://cdn-icons-png.flaticon.com/512/20/20673.png" alt="FaceBook" />
+        </BarPage>
+    </div>
     <BarSearch
         placeholder={Translations.textSafe(
             "navigation.search",
@@ -409,7 +423,7 @@
 		label="<img src='http://penguinmod.com/discord_white.png' width='25' alt='Discord'>"
 		style="padding:0.5rem"
 	/> -->
-    {#if loggedIn === true}
+    <!--{#if loggedIn === true}
         <BarPage
             link="https://penguinmod.com/messages"
             label={"<img src='http://penguinmod.com/messagesstatic/messages.svg' width='25' alt='Messages'>"}
@@ -434,16 +448,16 @@
             title="mystuff.title"
             lang={currentLang}
         />
-    {/if}
-    {#if (isAdmin || isApprover) && loggedIn}
+    {/if}-->
+    <!--{#if (isAdmin || isApprover) && loggedIn}
         <BarPage
             link="/panel"
             label="<img src='http://penguinmod.com/messagesstatic/panel.svg' width='25' alt='Panel'>"
             style="padding:0.5rem"
             title="Admin Panel"
         />
-    {/if}
-    {#if loggedIn === false}
+    {/if}-->
+    <!--{#if loggedIn === false}
         <BarPage on:click={login}>
             <LocalizedText
                 text="Sign in"
@@ -473,7 +487,7 @@
             <p>{accountUsername}</p>
             <img src="http://penguinmod.com/dropdown-caret.png" style="margin: 0 4px" alt="v" />
         </button>
-    {/if}
+    {/if}-->
     <BarPage
         label="<img src='http://penguinmod.com/globe.svg' alt='LanguageSwitcher'><img src='http://penguinmod.com/dropdown-caret.png' style='margin: 0 4px' alt='v'>"
         style={"padding: 0.5rem; position: absolute; left: 4px;" +
