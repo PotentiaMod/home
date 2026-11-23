@@ -412,17 +412,17 @@
             <!-- only render video if we are definetly not logged in -->
             {#if loggedIn === false}
                 {#if !thingyActive}
-                    <iframe
-                        width="560"
-                        height="315"
-                        src="https://www.youtube-nocookie.com/embed/g8zwb4W3G8Q"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                        class="example-video"
-                    />
+                    <video
+                    width="426.666667"
+                    height="240"
+                    autoplay="true"
+                    muted="true"
+                    loop="true"
+                    class="example-video"
+                >
+                    <source src="https://potentiamod.github.io/home/pot-feat.mp4" type="video/mp4" />
+                    <track kind="captions" />
+                </video>
                 {:else}
                     <iframe
                         width="560"
